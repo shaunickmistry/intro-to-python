@@ -9,12 +9,12 @@ code and see instant results.
 
 1. Search for the IDLE software application on your computer (if you have this, you will also have the Python 
 programming language).
-2. If you do not have IDLE installed you can download it from here https://www.python.org/downloads/
+2. If you do not have IDLE installed you can download it and Python from here https://www.python.org/downloads/.
 
 # Lesson 0
 In programming, we start counting at 0 because 0 is where you are now. 1 is where you will go next, and so on.
-Programming is all about efficiency you see. As we start looking at programming constructs such as arrays this will 
-become more clear. If you're not convinced check out this article 
+Programming is all about efficiency you see. As we start looking at programming constructs such as arrays (a fancy name 
+for a list) this will become more clear. If you're not convinced check out this article 
 https://skillcrush.com/2013/01/17/why-programmers-start-counting-at-zero/.
 
 So lesson 0 is some background on Python and programming. Let's learn by doing things, start by opening up IDLE! It
@@ -36,7 +36,7 @@ Type "help", "copyright", "credits" or "license()" for more information.
 >>> print("Hello, World!")
 ```
 
-This line of code, when executed/run will print the text `Hello, World!` to the console.
+This line of code, when executed/run by clicking Enter will print the text `Hello, World!` to the console.
 
 ```
 Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21) 
@@ -50,8 +50,21 @@ Let's break down what this line of code is doing. `print()` is an inbuilt Python
 that comes with Python for free. Neat! 
 
 But wait, what's a function? I'm glad you asked avid reader. A function is just a grouping of code, and when this code 
-is grouped into a function, it can be run by simply writing the name of the function an parentheses/curly brackets.
+is grouped into a function, it can be run by simply writing the name of the function with parentheses/curly brackets.
 
 Next, we can give our functions extra information by passing parameters. A parameter is a piece of information that we
 pass in the parentheses of a function. In our example above we passed the text/string `"Hello, World!"` to the `print()` 
-function, and so that's what it printed to the console.
+function, and so that's what was printed to the console.
+
+You just learnt about functions and parameters, give yourself a pat on the back. We can also use Python to evaluate 
+mathematical problems, try the following.
+
+```
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 2 + 2
+4
+```
+
+And so on. 
