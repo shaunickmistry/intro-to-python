@@ -1,70 +1,46 @@
 # Intro to Python
-A course for programming beginners to get hands on with Python (based on https://automatetheboringstuff.com/) by 
-automating everyday computer tasks.
+A series of workshops for MADE employees to automate everyday computer tasks using the online, free course Automate The 
+Boring Stuff (https://automatetheboringstuff.com/) by Al Sweigart.
 
-# Setup
-You will need to check that your computer has the Python programming language installed and a special Python text editor
-called IDLE. You can use any text editor, but IDLE includes an interactive shell where you can write Python 
-code and see instant results.
+To get the most out of our time in the workshops, chapters and lessons from the course will be assigned _before_ every 
+workshop as homework, and the time in the workshop will be used to cover questions and provide 1-to-1 support.
 
-1. Search for the IDLE software application on your computer (if you have this, you will also have the Python 
-programming language).
-2. If you do not have IDLE installed you can download it and Python from here https://www.python.org/downloads/.
+The course includes a series of YouTube videos that contain the same content as the text, so feel free to use whichever 
+works best for you.
 
-# Lesson 0
-In programming, we start counting at 0 because 0 is where you are now. 1 is where you will go next, and so on.
-Programming is all about efficiency you see. As we start looking at programming constructs such as arrays (a fancy name 
-for a list) this will become more clear. If you're not convinced check out this article 
-https://skillcrush.com/2013/01/17/why-programmers-start-counting-at-zero/.
+## Lesson 0 - Warm Up
+The first 6 chapters of Automate The Boring Stuff cover all the basics of Python that you need for this course, so
+please read chapters 0-5 and we will cover any questions that you have in Workshop 0. Work along with the examples and 
+test your learning with the questions in each chapter. If you have any questions that you'd like to ask before our 
+workshop, post them on the Made Slack channel `#python-workshops` and someone will get back to you in a jiff.
 
-So lesson 0 is some background on Python and programming. Let's learn by doing things, start by opening up IDLE! It
-should look something like this.
+Chapter 0 - An introduction to setting up your computer with Python and the software required
+Chapter 1 - The basics of the Python programming language (expressions, integers, strings and variables)
+Chapter 2 - Controlling the flow of programs (booleans, comparison operators, conditions, if statements, while loops, 
+for loops, importing modules)
+Chapter 3 - What are functions, global and local scope and exception handling 
+Chapter 4 - The list and tuple data types and methods
+Chapter 5 - The dictionary data type and structuring data with them
+Chapter 6 - Working with strings and useful string methods
 
-```
-Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21) 
-[Clang 6.0 (clang-600.0.57)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
->>>
-```
+The next 4 chapters are extremely useful to get the most out of these workshops, but that's a lot of reading, so they're
+not mandatory.
 
-We can write our first ever program by writing the following after the chevrons `>>>`.
+Chapter 7 - Searching strings for patterns using regular expressions
+Chapter 8 - Reading and writing files
+Chapter 9 - Copying, moving, renaming and compressing files
+Chapter 10 - Debugging your code and fixing issues 🐛
 
-```
-Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21) 
-[Clang 6.0 (clang-600.0.57)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
->>> print("Hello, World!")
-```
+## Lesson 1 - Web Scraping
+What the bloody hell is web scraping??? Do we take a shovel and start running it across our computer screens? Well 
+obviously not, but it actually isn't that far from the analogy of shovelling data from a website into your own program.
+Web scraping is the term used to describe a program that downloads data from a website, processes it and produces an 
+output. Maybe a report of all the products that a competitor is selling for cheaper, or any updates to a website since 
+the program last ran.
 
-This line of code, when executed/run by clicking Enter will print the text `Hello, World!` to the console.
+Have a read up of Chapter 11 from Automate The Boring Stuff, and Al will explain the `webbrowser` builtin module, 
+opening web pages and downloading them, formatting web pages with `Beautiful Soup` and clicking around websites using 
+the `Selenium` Python module.
 
-```
-Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21) 
-[Clang 6.0 (clang-600.0.57)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
->>> print("Hello, World!")
-Hello, World!
-```
-
-Let's break down what this line of code is doing. `print()` is an inbuilt Python function. That means it's some code
-that comes with Python for free. Neat! 
-
-But wait, what's a function? I'm glad you asked avid reader. A function is just a grouping of code, and when this code 
-is grouped into a function, it can be run by simply writing the name of the function with parentheses/curly brackets.
-
-Next, we can give our functions extra information by passing parameters. A parameter is a piece of information that we
-pass in the parentheses of a function. In our example above we passed the text/string `"Hello, World!"` to the `print()` 
-function, and so that's what was printed to the console.
-
-You just learnt about functions and parameters, give yourself a pat on the back. We can also use Python to evaluate 
-mathematical problems, try the following.
-
-```
-Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21) 
-[Clang 6.0 (clang-600.0.57)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
->>> 2 + 2
-4
-```
-
-And so on. 
+## Lesson 2 - Spreadsheet Manipulation
+Bar
