@@ -15,20 +15,29 @@ test your learning with the questions in each chapter. If you have any questions
 workshop, post them on the Made Slack channel `#python-workshops` and someone will get back to you in a jiff.
 
 Chapter 0 - An introduction to setting up your computer with Python and the software required
+
 Chapter 1 - The basics of the Python programming language (expressions, integers, strings and variables)
+
 Chapter 2 - Controlling the flow of programs (booleans, comparison operators, conditions, if statements, while loops, 
 for loops, importing modules)
+
 Chapter 3 - What are functions, global and local scope and exception handling 
+
 Chapter 4 - The list and tuple data types and methods
+
 Chapter 5 - The dictionary data type and structuring data with them
+
 Chapter 6 - Working with strings and useful string methods
 
 The next 4 chapters are extremely useful to get the most out of these workshops, but that's a lot of reading, so they're
 not mandatory.
 
 Chapter 7 - Searching strings for patterns using regular expressions
+
 Chapter 8 - Reading and writing files
+
 Chapter 9 - Copying, moving, renaming and compressing files
+
 Chapter 10 - Debugging your code and fixing issues 🐛
 
 ## Lesson 1 - Web Scraping
