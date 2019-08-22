@@ -14,31 +14,31 @@ please read chapters 0-5 and we will cover any questions that you have in Worksh
 test your learning with the questions in each chapter. If you have any questions that you'd like to ask before our 
 workshop, post them on the Made Slack channel `#python-workshops` and someone will get back to you in a jiff.
 
-Chapter 0 - An introduction to setting up your computer with Python and the software required
+[Chapter 0](https://automatetheboringstuff.com/chapter0/) - An introduction to setting up your computer with Python and the software required
 
-Chapter 1 - The basics of the Python programming language (expressions, integers, strings and variables)
+[Chapter 1](https://automatetheboringstuff.com/chapter1/) - The basics of the Python programming language (expressions, integers, strings and variables)
 
-Chapter 2 - Controlling the flow of programs (booleans, comparison operators, conditions, if statements, while loops, 
+[Chapter 2](https://automatetheboringstuff.com/chapter2/) - Controlling the flow of programs (booleans, comparison operators, conditions, if statements, while loops, 
 for loops, importing modules)
 
-Chapter 3 - What are functions, global and local scope and exception handling 
+[Chapter 3](https://automatetheboringstuff.com/chapter3/) - What are functions, global and local scope and exception handling 
 
-Chapter 4 - The list and tuple data types and methods
+[Chapter 4](https://automatetheboringstuff.com/chapter4/) - The list and tuple data types and methods
 
-Chapter 5 - The dictionary data type and structuring data with them
+[Chapter 5](https://automatetheboringstuff.com/chapter5/) - The dictionary data type and structuring data with them
 
-Chapter 6 - Working with strings and useful string methods
+[Chapter 6](https://automatetheboringstuff.com/chapter6/) - Working with strings and useful string methods
 
 The next 4 chapters are extremely useful to get the most out of these workshops, but that's a lot of reading, so they're
 not mandatory.
 
-Chapter 7 - Searching strings for patterns using regular expressions
+[Chapter 7](https://automatetheboringstuff.com/chapter7/) - Searching strings for patterns using regular expressions
 
-Chapter 8 - Reading and writing files
+[Chapter 8](https://automatetheboringstuff.com/chapter8/) - Reading and writing files
 
-Chapter 9 - Copying, moving, renaming and compressing files
+[Chapter 9](https://automatetheboringstuff.com/chapter9/) - Copying, moving, renaming and compressing files
 
-Chapter 10 - Debugging your code and fixing issues 🐛
+[Chapter 10](https://automatetheboringstuff.com/chapter10/) - Debugging your code and fixing issues 🐛
 
 ## Lesson 1 - Web Scraping
 What the bloody hell is web scraping??? Do we take a shovel and start running it across our computer screens? Well 
@@ -47,9 +47,9 @@ Web scraping is the term used to describe a program that downloads data from a w
 output. Maybe a report of all the products that a competitor is selling for cheaper, or any updates to a website since 
 the program last ran.
 
-Have a read up of Chapter 11 from Automate The Boring Stuff, and Al will explain the `webbrowser` builtin module, 
-opening web pages and downloading them, formatting web pages with `Beautiful Soup` and clicking around websites using 
-the `Selenium` Python module.
+Have a read of [Chapter 11](https://automatetheboringstuff.com/chapter11/) from Automate The Boring Stuff and Al will 
+explain the `webbrowser` builtin module, opening web pages and downloading them, formatting web pages with `Beautiful 
+Soup` and controlling websites using the `Selenium` Python module.
 
 ## Lesson 2 - Spreadsheet Manipulation
 Bar
