@@ -5,8 +5,8 @@ Boring Stuff (https://automatetheboringstuff.com/) by Al Sweigart.
 To get the most out of our time in the workshops, chapters and lessons from the course will be assigned _before_ every 
 workshop as homework, and the time in the workshop will be used to cover questions and provide 1-to-1 support.
 
-The course includes a series of YouTube videos that contain the same content as the text, so feel free to use whichever 
-works best for you.
+The course includes a series of YouTube videos (links in the below pages) that contain the same content as the text, so
+feel free to use whichever works best for you.
 
 ## Lesson 0 - Warm Up
 The first 6 chapters of Automate The Boring Stuff cover all the basics of Python that you need for this course, so
@@ -44,12 +44,21 @@ not mandatory.
 What the bloody hell is web scraping??? Do we take a shovel and start running it across our computer screens? Well 
 obviously not, but it actually isn't that far from the analogy of shovelling data from a website into your own program.
 Web scraping is the term used to describe a program that downloads data from a website, processes it and produces an 
-output. Maybe a report of all the products that a competitor is selling for cheaper, or any updates to a website since 
-the program last ran.
+output. That output could be a report of all the products that a competitor is selling for cheaper, or any updates to a
+website since the program last ran.
 
 Have a read of [Chapter 11](https://automatetheboringstuff.com/chapter11/) from Automate The Boring Stuff and Al will 
 explain the `webbrowser` builtin module, opening web pages and downloading them, formatting web pages with `Beautiful 
 Soup` and controlling websites using the `Selenium` Python module.
+
+### Task 1 - Weather Report
+Given a weather reporting website of your choice, write a Python script that will print out today's temperature.
+
+**Top Tips:** 
+- Breakdown the problem you have into small, manageable chunks that you understand. 
+- Then do the same with the solution that you are trying to create. 
+- Try not to get carried away with getting straight to the end result. 
+- i.e. How do I download a webpage? Then once that's done, how do I convert that file into a Beautiful Soup object?
 
 ## Lesson 2 - Spreadsheet Manipulation
 Bar
