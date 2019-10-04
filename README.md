@@ -60,5 +60,9 @@ Given a weather reporting website of your choice, write a Python script that wil
 - Try not to get carried away with getting straight to the end result. 
 - i.e. How do I download a webpage? Then once that's done, how do I convert that file into a Beautiful Soup object?
 
+### Task 2 - I'm Feeling Lucky
+Given a search term, write a Python script that will open the top 5 results from Bing in your web browser.
+(I recommend Bing because the HTML structure of Google results has become more complicated since Al wrote his course)
+
 ## Lesson 2 - Spreadsheet Manipulation
 Bar
