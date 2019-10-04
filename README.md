@@ -14,14 +14,18 @@ please read chapters 0-5 and we will cover any questions that you have in Worksh
 test your learning with the questions in each chapter. If you have any questions that you'd like to ask before our 
 workshop, post them on the Made Slack channel `#python-workshops` and someone will get back to you in a jiff.
 
-[Chapter 0](https://automatetheboringstuff.com/chapter0/) - An introduction to setting up your computer with Python and the software required
+[Chapter 0](https://automatetheboringstuff.com/chapter0/) - An introduction to setting up your computer with Python and 
+the software required
 
-[Chapter 1](https://automatetheboringstuff.com/chapter1/) - The basics of the Python programming language (expressions, integers, strings and variables)
+[Chapter 1](https://automatetheboringstuff.com/chapter1/) - The basics of the Python programming language (expressions, 
+integers, strings and variables)
 
-[Chapter 2](https://automatetheboringstuff.com/chapter2/) - Controlling the flow of programs (booleans, comparison operators, conditions, if statements, while loops, 
+[Chapter 2](https://automatetheboringstuff.com/chapter2/) - Controlling the flow of programs (booleans, comparison 
+operators, conditions, if statements, while loops, 
 for loops, importing modules)
 
-[Chapter 3](https://automatetheboringstuff.com/chapter3/) - What are functions, global and local scope and exception handling 
+[Chapter 3](https://automatetheboringstuff.com/chapter3/) - What are functions, global and local scope and exception 
+handling 
 
 [Chapter 4](https://automatetheboringstuff.com/chapter4/) - The list and tuple data types and methods
 
@@ -39,6 +43,10 @@ not mandatory.
 [Chapter 9](https://automatetheboringstuff.com/chapter9/) - Copying, moving, renaming and compressing files
 
 [Chapter 10](https://automatetheboringstuff.com/chapter10/) - Debugging your code and fixing issues 🐛
+
+I would also heavily recommend reading [Appendix A](https://automatetheboringstuff.com/appendixa/) which explains 
+installing third party modules - Python code that doesn't come as started. This is done using the `pip` tool from the
+command line i.e. running `pip install selenium` or `pip install requests`.
 
 ## Lesson 1 - Web Scraping
 What the bloody hell is web scraping??? Do we take a shovel and start running it across our computer screens? Well 
@@ -61,8 +69,19 @@ Given a weather reporting website of your choice, write a Python script that wil
 - i.e. How do I download a webpage? Then once that's done, how do I convert that file into a Beautiful Soup object?
 
 ### Task 2 - I'm Feeling Lucky
-Given a search term, write a Python script that will open the top 5 results from Bing in your web browser.
-(I recommend Bing because the HTML structure of Google results has become more complicated since Al wrote his course)
+Given a search term, write a Python script that will open the top 5 results from Bing in your web browser - I recommend
+Bing because the HTML structure of Google results has become more complicated since Al wrote his course.
+
+### Task 3 - Selenium
+Now we get onto the fun stuff! Writing programs that can interact with webpages 😱. In this task, use what you have
+learnt from Chapter 11 about Selenium to login to a social media account and post a message.
+
+**Top Tips:**
+- You'll need to download the `chromedriver` from https://chromedriver.chromium.org/downloads which will allow Python to
+talk to your Chrome browser.
+- Make sure the `chromedriver` version matches the version of your Chrome application.
+- When creating the `browser` variable, pass as a parameter to the Chrome initialiser the location of your file i.e 
+`browser = webdriver.Chrome(executable_path="/Users/smistry/Downloads/chromedriver")`
 
 ## Lesson 2 - Spreadsheet Manipulation
 Bar
