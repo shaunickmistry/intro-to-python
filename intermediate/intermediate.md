@@ -1,9 +1,9 @@
 ## Intermediate Workshop
-The intermediate workshop as mentioned before is for colleagues that have worked with Python or other programming 
+The intermediate workshop, as mentioned before, is for colleagues that have worked with Python or other programming 
 languages before and would like to learn about web scraping.
 
 We will be looking at the `webbrowser` builtin module, opening web pages and downloading them, formatting web pages with
-`Beautiful  Soup` and controlling websites using the `Selenium` Python module.
+`Beautiful Soup` and controlling websites using the `Selenium` Python module.
 
 As an example of what you could achieve with this material, see the example program 
 [lottery.py](/intermediate/lesson_1/lottery.py) which will enter the lottery for a theatre show Harry Potter and the 

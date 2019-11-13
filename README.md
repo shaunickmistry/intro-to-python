@@ -10,7 +10,7 @@ programming languages before and would like to learn about web scraping and spre
 You'll find that all of the 'Automate The Boring Stuff' chapters referred to in this course include a corresponding
 YouTube video that contain the same content as the text, so feel free to use whichever works best for you.
 
-[Beginner Workshops](/beginner/beginner.md)
+[Beginner Workshop](/beginner/beginner.md)
 
-[Intermediate Workshops](/intermediate/intermediate.md)
+[Intermediate Workshop](/intermediate/intermediate.md)
 
