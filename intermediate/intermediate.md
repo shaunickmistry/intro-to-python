@@ -21,6 +21,13 @@ return a `Response` object containing the web page and some information on the H
 check the success of a request by calling the `raise_for_status()` method which will raise an error if there was an
 issue.
 
+```python
+import requests
+
+response = requests.get("https://www.made.com")
+response.raise_for_status()
+```
+
 ### `BeautifulSoup`
 To continue where the `requests` module left off, `BeautifulSoup` is a module that can extract particular information 
 and data from a web response. Again you will need to install it using `pip install beautifulsoup4` and use it in your 
@@ -31,8 +38,23 @@ from a web page and extra data from it. To do this we call the `bs4.BeautifulSou
 as a parameter. The `BeautifulSoup.select()` method then allows us to use a CSS selector such as `"div.main"` to 
 identify a `<div>` tag with the class `main`.
 
+```python
+import bs4
+import requests
+
+response = requests.get("https://www.made.com")
+html = bs4.BeautifulSoup(response.text)
+categories = html.select(".gtm-primary-link")
+```
+
 ### `webbrowser`
 The main usage that we have for the `webbrowser` module is to open web pages using the `open()` method given a URL.  
+
+```python
+import webbrowser
+
+webbrowser.open("https://www.made.com")
+```
 
 ### Task 1 - Weather Report
 With the knowledge given on these web based Python modules, and using 
@@ -60,22 +82,30 @@ example, for Chrome 78 you will need to download the `chromedriver` file from ht
 either add this executable to your path or add the file location as a parameter when creating your webdriver object in 
 Python i.e. `browser = webdriver.Chrome(executable_path="~/Downloads/chromedriver")`.
 
-Using the `get()` method of this webdriver object will then open a web browser that Selenium controls. Next comes 
-finding HTML objects on the web page that is open, which can be done using CSS class names, selectors, tag names or ids.
-For example, `browser.find_element_by_class_name("main")` would find a single HTML object with the class name `main`
-whilst `browser.find_elements_by_class_name("button")` would find all of the HTML objects with class name `button` - 
-both returning `WebElement` objects.
+Using the `get()` method of this webdriver object will then open a web browser that Selenium controls. 
+
+Next comes finding HTML objects on the web page that is open, which can be done using CSS class names, selectors, tag 
+names or ids. For example, `browser.find_element_by_class_name("main")` would find a single HTML object with the class
+name `main` whilst `browser.find_elements_by_class_name("button")` would find all of the HTML objects with class name 
+`button` - both returning `WebElement` objects. See Table 11-3 in 
+[Chapter 11](https://automatetheboringstuff.com/chapter11/) for a list of Selenium methods to find elements.
 
 Interaction can then occur with these objects through the `click()` and `send_keys()` methods - the latter takes a
 string argument and types the string into the given web element.
 
-### Task 3 - Selenium
-Now we get onto the fun stuff! Writing programs that can interact with webpages 😱. In this task, use what you have
-learnt from Chapter 11 about Selenium to login to a social media account and post a message.
+```python
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
-**Top Tips:**
-- You'll need to download the `chromedriver` from https://chromedriver.chromium.org/downloads which will allow Python to
-talk to your Chrome browser.
-- Make sure the `chromedriver` version matches the version of your Chrome application.
-- When creating the `browser` variable, pass as a parameter to the Chrome initialiser the location of your file i.e 
-`browser = webdriver.Chrome(executable_path="/Users/smistry/Downloads/chromedriver")`
+browser = webdriver.Chrome()
+browser.get("https://wwww.made.com")
+
+search_box = browser.find_element_by_css_selector("#search-input .input")
+search_box.send_keys("table")
+search_box.send_keys(Keys.ENTER)
+```
+
+### Task 3 - Selenium
+Now we get onto the fun stuff! Writing programs that can interact with webpages 😱. In this task, use the information 
+about Selenium above and [Chapter 11](https://automatetheboringstuff.com/chapter11/) to login to Made.com with your 
+customer account and place a sofa in your checkout basket.

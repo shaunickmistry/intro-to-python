@@ -6,7 +6,7 @@ As an example of what you could achieve with Python after some study and underst
 [/intermediate/lesson_1](/intermediate/lesson_1). These include the program [lucky.py](/intermediate/lesson_1/lucky.py) 
 which given a search term, will open the first 5 results in Google for you, 
 [weather.py](/intermediate/lesson_1/weather.py) which will print today's temperature from BBC Weather and
-[social.py](/intermediate/lesson_1/social.py) which login to your Facebook account and submit a post on your profile. 
+[social.py](/intermediate/lesson_1/sofa.py) which login to your Facebook account and submit a post on your profile. 
 And at the end of this workshop I can show you a Python program [lottery.py](/intermediate/lesson_1/lottery.py) that 
 will enter the lottery for a theatre show Harry Potter and the Cursed Child!
 
