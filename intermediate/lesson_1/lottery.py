@@ -24,7 +24,7 @@ sleep(2)
 # find the 'email address' input on the page
 email_address = browser.find_element_by_name("email")
 # enter an email address
-email_address.send_keys("shaunickmistry@hotmail.co.uk")
+email_address.send_keys("joe@bloggs.com")
 
 sleep(2)
 # find the 'password' input on the page
