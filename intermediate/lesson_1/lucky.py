@@ -3,38 +3,29 @@ import requests
 import sys
 import webbrowser
 
+# get the last argument from the command line i.e. the search criteria
+search_criteria = sys.argv[-1]
 
-class Lucky:
+# search bing.com for the search criteria
+response = requests.get("https://www.bing.com/search?q=" + search_criteria)
 
-    def __init__(self):
-        search_engine = sys.argv[1:][0]
-        if search_engine not in ['google', 'bing']:
-            print('Please provide a valid search engine: [\'google\', \'bing\']')
-            exit()
-        else:
-            search_criteria = sys.argv[2:]
-            response = requests.get("https://www." + search_engine + ".com/search?q=" + ''.join(search_criteria))
-            response.raise_for_status()
-            pretty_html = bs4.BeautifulSoup(response.text, features="html.parser")
+# check that the HTTP request was successful
+response.raise_for_status()
 
-            search = getattr(self, search_engine)
-            results = search(pretty_html)
-            links = []
-            for result in results:
-                link = result.select("a")[0]
-                links.append(link.get("href"))
+# use the BeautifulSoup module to parse the HTTP response i.e. the web page
+pretty_html = bs4.BeautifulSoup(response.text, features="html.parser")
 
-            num_open = min(5, len(links))
-            for i in range(num_open):
-                webbrowser.open(links[i])
+# filter the search results from the web page
+results = pretty_html.select(".b_algo")
+links = []
 
-    def google(self, soup):
-        print("This search engine is not yet configured. Please use another.")
-        exit()
+# extract a list of web links from the search results
+for result in results:
+    link = result.select("a")[0]
+    links.append(link.get("href"))
 
-    def bing(self, soup):
-        return soup.select(".b_algo")
+# open at most the first 5 web pages
+num_open = min(5, len(links))
+for i in range(num_open):
+    webbrowser.open(links[i])
 
-
-if __name__ == "__main__":
-    lucky = Lucky()
