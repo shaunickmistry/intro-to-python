@@ -13,20 +13,21 @@ account_icon = browser.find_element_by_id("my_account_links")
 # click it
 account_icon.click()
 
+# read user credentials from a file
+# change this to a file on your computer
+file = open("/Users/smistry/Downloads/user_sofa.txt")
+email_address = file.readline()
+
 # find the 'email address' input box
-email_address = browser.find_element_by_name("login[username]")
+email_address_input = browser.find_element_by_name("login[username]")
 # type an email address in
-email_address.send_keys("joe.bloggs@made.com")
+email_address_input.send_keys(email_address)
 
 # find the 'password' input box
-password = browser.find_element_by_name("login[password]")
+password_input = browser.find_element_by_name("login[password]")
+password = file.readline()
 # type a password in
-password.send_keys("test")
-
-# find the 'sign in' button
-sign_in = browser.find_element_by_id("send2")
-# click it
-sign_in.click()
+password_input.send_keys(password)
 
 search_box = browser.find_element_by_id("search-input")
 search_box.send_keys("sofa")
@@ -41,6 +42,6 @@ sofas[0].click()
 add_to_basket = browser.find_element_by_css_selector("button[type='submit']")
 add_to_basket.click()
 
-# wait for 10 seconds, then close the browser
-sleep(10)
+# wait for demo purposes and then close the browser
+sleep(7)
 browser.close()

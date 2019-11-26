@@ -18,7 +18,9 @@ order_date.click()
 tomorrow = datetime.today() + timedelta(days=1)
 order_date.send_keys(tomorrow.strftime("%d%m%Y"))
 
-order_times = browser.find_elements_by_css_selector(".freebirdFormviewerViewItemsTimeTimeInputs .quantumWizTextinputPaperinputInput")
+order_times = browser.find_elements_by_css_selector(
+    ".freebirdFormviewerViewItemsTimeTimeInputs .quantumWizTextinputPaperinputInput"
+)
 order_times[0].send_keys("10")
 order_times[1].send_keys("00")
 
