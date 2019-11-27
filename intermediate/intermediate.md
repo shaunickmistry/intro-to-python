@@ -1,8 +1,8 @@
 
 # Intermediate Workshop
-This workshop, as mentioned before, is for colleagues that have worked with Python or other programming languages before
-and would like to learn about web scraping. It is based on [Chapter 11](https://automatetheboringstuff.com/chapter11/)
-from the 'Automate The Boring Stuff' online course.
+This workshop is for colleagues that have worked with Python or other programming languages beforeand would like to 
+learn about web scraping. It is based on [Chapter 11](https://automatetheboringstuff.com/chapter11/) from the 'Automate 
+The Boring Stuff' online course.
 
 We will be looking at opening web pages with the `webbrowser` module, downloading them with `requests`, formatting with
 `Beautiful Soup` and controlling websites using the `Selenium` Python module.
