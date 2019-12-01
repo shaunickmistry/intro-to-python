@@ -19,6 +19,10 @@ pretty_html = bs4.BeautifulSoup(response.text, features="html.parser")
 results = pretty_html.select(".b_algo")
 links = []
 
+if len(results) == 0:
+    print("No results found for search criteria: " + search_criteria)
+    exit()
+
 # extract a list of web links from the search results
 for result in results:
     link = result.select("a")[0]

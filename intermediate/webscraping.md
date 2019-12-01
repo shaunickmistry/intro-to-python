@@ -1,4 +1,4 @@
-# Web Scraping Workshop
+# Web Scraping with Python
 This workshop is for colleagues that have worked with Python or other programming languages before and would like to 
 learn about web scraping with Python. It is based on [Chapter 11](https://automatetheboringstuff.com/chapter11/) from 
 the 'Automate The Boring Stuff' online course.
