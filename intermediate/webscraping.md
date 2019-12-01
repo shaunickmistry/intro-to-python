@@ -82,7 +82,7 @@ we `pip install selenium` and use `from selenium import webdriver` in our progra
 You will need a webdriver file that matches the version of browser you would like Selenium to interact with. For 
 example, for Chrome 78 you will need to download the `chromedriver` file from https://chromedriver.chromium.org/ and
 either add this executable to your path or add the file location as a parameter when creating your webdriver object in 
-Python i.e. `browser = webdriver.Chrome(executable_path="~/Downloads/chromedriver")`.
+Python i.e. `browser = webdriver.Chrome(executable_path="/Users/joebloggs/Downloads/chromedriver")`.
 
 Using the `get()` method of this webdriver object will then open a web browser that Selenium controls. 
 
@@ -99,15 +99,15 @@ string argument and types the string into the given web element.
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-browser = webdriver.Chrome()
+browser = webdriver.Chrome(executable_path="/Users/joebloggs/Downloads/chromedriver")
 browser.get("https://wwww.made.com")
 
-search_box = browser.find_element_by_css_selector("#search-input .input")
+search_box = browser.find_element_by_id("search-input")
 search_box.send_keys("table")
 search_box.send_keys(Keys.ENTER)
 ```
 
 ### Task 3 - Selenium
-Now we get onto the fun stuff! Writing programs that can interact with webpages 😱. In this task, use the information 
+Now we get onto the fun stuff! Writing programs that can interact with web pages 😱. In this task, use the information 
 about Selenium above and [Chapter 11](https://automatetheboringstuff.com/chapter11/) to login to Made.com with your 
 customer account and place a sofa in your checkout basket.
