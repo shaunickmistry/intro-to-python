@@ -4,11 +4,20 @@ learn about web scraping with Python. It is based on [Chapter 11](https://automa
 the 'Automate The Boring Stuff' online course.
 
 We will be looking at opening web pages with the `webbrowser` module, downloading them with `requests`, formatting with
-`Beautiful Soup` and controlling websites using the `Selenium` Python module.
+`BeautifulSoup` and controlling websites using the `Selenium` Python module.
 
 As an example of what you could achieve with this material, see the example program 
 [lottery.py](/intermediate/demos/lottery.py) which will enter the lottery for a theatre show Harry Potter and the 
 Cursed Child!
+
+### `webbrowser`
+The main usage that we have for the `webbrowser` module is to open web pages using the `open()` method given a URL.  
+
+```python
+import webbrowser
+
+webbrowser.open("https://www.made.com")
+```
 
 ### `requests`
 This module allows us to download web pages for us to work with later. It doesn't come built in with Python so we'll
@@ -47,15 +56,6 @@ from bs4 import BeautifulSoup
 response = requests.get("https://www.made.com")
 html = BeautifulSoup(response.text, "html.parser")
 account_link = html.select("#my_account_links")
-```
-
-### `webbrowser`
-The main usage that we have for the `webbrowser` module is to open web pages using the `open()` method given a URL.  
-
-```python
-import webbrowser
-
-webbrowser.open("https://www.made.com")
 ```
 
 ### Task 1 - Weather Report
