@@ -89,8 +89,9 @@ Using the `get()` method of this webdriver object will then open a web browser t
 Next comes finding HTML objects on the web page that is open, which can be done using CSS class names, selectors, tag 
 names or ids. For example, `browser.find_element_by_class_name("main")` would find a single HTML object with the class
 name `main` whilst `browser.find_elements_by_class_name("button")` would find all of the HTML objects with class name 
-`button` - both returning `WebElement` objects. See Table 11-3 in 
-[Chapter 11](https://automatetheboringstuff.com/chapter11/) for a list of Selenium methods to find elements.
+`button` - both returning `WebElement` objects. See 
+[Table 11-3](https://automatetheboringstuff.com/chapter11/#calibre_link-11) in Chapter 11 for a list of Selenium methods
+to find elements.
 
 Interaction can then occur with these objects through the `click()` and `send_keys()` methods - the latter takes a
 string argument and types the string into the given web element.
@@ -100,7 +101,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 browser = webdriver.Chrome(executable_path="/Users/joebloggs/Downloads/chromedriver")
-browser.get("https://wwww.made.com")
+browser.get("https://www.made.com")
 
 search_box = browser.find_element_by_id("search-input")
 search_box.send_keys("table")
