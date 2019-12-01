@@ -43,8 +43,8 @@ sleep(2)
 # find the form on the next page
 form = browser.find_element_by_css_selector("form")
 # submit/click it to enter the ticket lottery
-form.submit()
+# form.submit()
 
-# wait for demo purposes and then close the browser
+# wait for demos purposes and then close the browser
 sleep(4)
 browser.close()

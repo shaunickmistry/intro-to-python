@@ -12,4 +12,4 @@ YouTube video that contain the same content as the text, so feel free to use whi
 
 [Beginner Workshop](/beginner/beginner.md)
 
-[Intermediate Workshop](/intermediate/intermediate.md)
+[Intermediate Workshop](/intermediate/webscraping.md)

@@ -3,11 +3,11 @@ Python is a popular programming language and one that we use at Made.com for our
 workshop we will be looking at the basics of Python and programming including; variables, functions and loops. 
 
 As an example of what you could achieve with Python after some study and understanding, see the example programs in 
-[/intermediate/lesson_1](/intermediate/lesson_1). These include the program [lucky.py](/intermediate/lesson_1/lucky.py) 
+[/intermediate/lesson_1](/intermediate/lesson_1). These include the program [lucky.py](/intermediate/task_2/lucky.py) 
 which given a search term, will open the first 5 results in Google for you, 
-[weather.py](/intermediate/lesson_1/weather.py) which will print today's temperature from BBC Weather and
-[social.py](/intermediate/lesson_1/sofa.py) which login to your Facebook account and submit a post on your profile. 
-And at the end of this workshop I can show you a Python program [lottery.py](/intermediate/lesson_1/lottery.py) that 
+[weather.py](/intermediate/task_1/weather.py) which will print today's temperature from BBC Weather and
+[social.py](/intermediate/task_3/sofa.py) which login to your Facebook account and submit a post on your profile. 
+And at the end of this workshop I can show you a Python program [lottery.py](/intermediate/demos/lottery.py) that 
 will enter the lottery for a theatre show Harry Potter and the Cursed Child!
 
 ### Task 1 - Compare values

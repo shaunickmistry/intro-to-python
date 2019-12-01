@@ -42,6 +42,6 @@ sofas[0].click()
 add_to_basket = browser.find_element_by_css_selector("button[type='submit']")
 add_to_basket.click()
 
-# wait for demo purposes and then close the browser
+# wait for demos purposes and then close the browser
 sleep(7)
 browser.close()

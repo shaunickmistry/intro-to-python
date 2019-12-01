@@ -1,14 +1,13 @@
-
-# Intermediate Workshop
+# Web Scraping Workshop
 This workshop is for colleagues that have worked with Python or other programming languages before and would like to 
-learn about web scraping. It is based on [Chapter 11](https://automatetheboringstuff.com/chapter11/) from the 'Automate 
-The Boring Stuff' online course.
+learn about web scraping with Python. It is based on [Chapter 11](https://automatetheboringstuff.com/chapter11/) from 
+the 'Automate The Boring Stuff' online course.
 
 We will be looking at opening web pages with the `webbrowser` module, downloading them with `requests`, formatting with
 `Beautiful Soup` and controlling websites using the `Selenium` Python module.
 
 As an example of what you could achieve with this material, see the example program 
-[lottery.py](/intermediate/lesson_1/lottery.py) which will enter the lottery for a theatre show Harry Potter and the 
+[lottery.py](/intermediate/demos/lottery.py) which will enter the lottery for a theatre show Harry Potter and the 
 Cursed Child!
 
 ### `requests`
@@ -18,7 +17,7 @@ in our Python programs. See [Appendix A](https://automatetheboringstuff.com/appe
 install third party modules.
 
 To download a web page with `requests` we use the `requests.get()` method which takes a URL as a parameter, and will 
-return a `Response` object containing the web page and some information on the HTTP response in `Response.text`. We can 
+return a Response object containing the web page and some information on the HTTP response in `Response.text`. We can 
 check the success of a request by calling the `raise_for_status()` method which will raise an error if there was an
 issue.
 
@@ -34,18 +33,20 @@ To continue where the `requests` module left off, `BeautifulSoup` is a module th
 and data from a web response. Again you will need to install it using `pip install beautifulsoup4` and use it in your 
 Python programs using `import bs4`.
 
-Web pages are made up of HTML, with certain tags and CSS classes. `BeautifulSoup` allows us to select any DOM object 
-from a web page and extra data from it. To do this we call the `bs4.BeautifulSoup()` method with the HTMl to be parsed 
-as a parameter. The `BeautifulSoup.select()` method then allows us to use a CSS selector such as `"div.main"` to 
-identify a `<div>` tag with the class `main`.
+Web pages are made up of HTML, with certain tags and CSS classes. `BeautifulSoup` allows us to select any HTML element 
+from a web page and extract data from it. To do this we create a BeautifulSoup object by passing the HTMl to be parsed 
+and the parser type as parameters. The `select()` method then allows us to use CSS selectors (see the 
+[w3schools.com](https://www.w3schools.com/cssref/css_selectors.asp) tutorial on CSS selectors) such as 
+`#my_account_links` to identify an element with an id attribute `my_account_links`. 
 
 ```python
-import bs4
 import requests
 
+from bs4 import BeautifulSoup
+
 response = requests.get("https://www.made.com")
-html = bs4.BeautifulSoup(response.text)
-categories = html.select(".gtm-primary-link")
+html = BeautifulSoup(response.text, "html.parser")
+account_link = html.select("#my_account_links")
 ```
 
 ### `webbrowser`
@@ -59,9 +60,9 @@ webbrowser.open("https://www.made.com")
 
 ### Task 1 - Weather Report
 With the knowledge given on these web based Python modules, and using 
-[Chapter 11](https://automatetheboringstuff.com/chapter11/) of 'Automate The Boring Stuff' write write a Python script 
-that will download a weather forecast website web page and print out today's temperature. You'll need to extract the
-HTML 
+[Chapter 11](https://automatetheboringstuff.com/chapter11/) of 'Automate The Boring Stuff' write a Python script that 
+will download a weather forecast web page and print out today's temperature. You'll need to identify and extract the
+HTML elements containing the forecast data that you're looking for, and then print that to the terminal.
 
 **Top Tips:** 
 - Breakdown the problem you have into small, manageable chunks that you understand. 
