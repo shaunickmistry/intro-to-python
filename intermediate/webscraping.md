@@ -21,7 +21,7 @@ webbrowser.open("https://www.made.com")
 
 ### `requests`
 This module allows us to download web pages for us to work with later. It doesn't come built in with Python so we'll
-need to install it. This can be done by running `pip install requests` from the command line and using `import requests`
+need to install it. This can be done by running `pip3 install requests` from the command line and using `import requests`
 in our Python programs. See [Appendix A](https://automatetheboringstuff.com/appendixa/) for more instructions on how to 
 install third party modules.
 
@@ -39,7 +39,7 @@ response.raise_for_status()
 
 ### `BeautifulSoup`
 To continue where the `requests` module left off, `BeautifulSoup` is a module that can extract particular information 
-and data from a web response. Again you will need to install it using `pip install beautifulsoup4` and use it in your 
+and data from a web response. Again you will need to install it using `pip3 install beautifulsoup4` and use it in your 
 Python programs using `import bs4`.
 
 Web pages are made up of HTML, with certain tags and CSS classes. `BeautifulSoup` allows us to select any HTML element 
