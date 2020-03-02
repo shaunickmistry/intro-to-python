@@ -34,13 +34,12 @@ you in for the lottery for the Harry Potter and the Cursed Child theatre show!
     - If you do see this kind of error, or you have Python 2 installed, you can download Python 3 from 
     [https://www.python.org/downloads/](https://www.python.org/downloads/).
 
-2. Pick a piece of software to write Python programs.
+2. Install [PyCharm Community](https://www.jetbrains.com/pycharm/download) to write and run Python programs.
     - To start with we will be using the the Python Interpreter to write and run small pieces of Python code, this comes
     with the Python language on installation. To write larger programs we will use an Integrated Development Environment 
     (IDE for short). This is mostly just a text editor, but it has other uses such as highlighting when we've written 
     invalid Python code and running code easily. The IDE that I (and many other developers at Made) use and recommend is 
-    [PyCharm Community](https://www.jetbrains.com/pycharm/download), but you are of course free to use any other as they 
-    all do the same thing.
+    PyCharm Community, but you are of course free to use any other IDE as they all do the same thing.
 
 ### Python interpreter
 So let's write our first Python program! And we'll do this using the Python Interpreter. This is a piece of software 
