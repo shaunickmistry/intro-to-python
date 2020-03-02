@@ -14,7 +14,7 @@ a program that I've written called [lottery.py](/intermediate/demos/lottery.py) 
 you in for the lottery for the Harry Potter and the Cursed Child theatre show!
 
 ### Before we can start
-1. Make sure you have the Python programming language installed on your computer.
+1. Make sure you have Python 3 installed on your computer.
     - You can check this by opening the Terminal program on Mac or Command Prompt program on Windows and typing 
     `python --version` then hitting enter. 
     
@@ -23,15 +23,16 @@ you in for the lottery for the Harry Potter and the Cursed Child theatre show!
     Python 3.8.0
     ```
     
-    The version number can be different, but as long as you don't see something like the error below, you're good to go.
+    The version number can be different, but as long as it's not Python 2 or you don't see an error like the one below, 
+    you're good to go.
     
     ```
     $ python --version
     -bash: python: command not found
     ```
     
-    - If you do see this kind of error, then Python is not installed on your computer, and you can use the instructions 
-    in [Chapter 0 - Introduction](https://automatetheboringstuff.com/2e/chapter0/) to install it.
+    - If you do see this kind of error, or you have Python 2 installed, you can download Python 3 from 
+    [https://www.python.org/downloads/](https://www.python.org/downloads/).
 
 2. Pick a piece of software to write Python programs.
     - To start with we will be using the the Python Interpreter to write and run small pieces of Python code, this comes
