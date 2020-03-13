@@ -1,7 +1,8 @@
 # Web Scraping with Python
 This workshop is for colleagues that have worked with Python or other programming languages before and would like to 
-learn about web scraping with Python. It is based on [Chapter 11](https://automatetheboringstuff.com/chapter11/) from 
-the 'Automate The Boring Stuff' online course.
+learn about web scraping with Python. It is based on 
+[Chapter 12 - Web Scraping](https://automatetheboringstuff.com/2e/chapter12/) from  the 'Automate The Boring Stuff' 
+online course.
 
 We will be looking at opening web pages with the `webbrowser` module, downloading them with `requests`, formatting with
 `BeautifulSoup` and controlling websites using the `Selenium` Python module.
@@ -21,9 +22,10 @@ webbrowser.open("https://www.made.com")
 
 ### `requests`
 This module allows us to download web pages for us to work with later. It doesn't come built in with Python so we'll
-need to install it. This can be done by running `pip3 install requests` from the command line and using `import requests`
-in our Python programs. See [Appendix A](https://automatetheboringstuff.com/appendixa/) for more instructions on how to 
-install third party modules.
+need to install it. This can be done by running `pip install requests` from the command line and using `import requests`
+in our Python programs. See [Appendix A](https://automatetheboringstuff.com/2e/appendixa/) for more instructions on how 
+to install third party modules.
+
 
 To download a web page with `requests` we use the `requests.get()` method which takes a URL as a parameter, and will 
 return a Response object containing the web page and some information on the HTTP response in `Response.text`. We can 
@@ -60,9 +62,9 @@ account_link = html.select("#my_account_links")
 
 ### Task 1 - Weather Report
 With the knowledge given on these web based Python modules, and using 
-[Chapter 11](https://automatetheboringstuff.com/chapter11/) of 'Automate The Boring Stuff' write a Python script that 
-will download a weather forecast web page and print out today's temperature. You'll need to identify and extract the
-HTML elements containing the forecast data that you're looking for, and then print that to the terminal.
+[Chapter 12 - Web Scraping](https://automatetheboringstuff.com/2e/chapter12/) of 'Automate The Boring Stuff' write a 
+Python script that will download a weather forecast web page and print out today's temperature. You'll need to identify 
+and extract the HTML elements containing the forecast data that you're looking for, and then print that to the terminal.
 
 **Top Tips:** 
 - Breakdown the problem you have into small, manageable chunks that you understand. 
@@ -90,8 +92,8 @@ Next comes finding HTML objects on the web page that is open, which can be done 
 names or ids. For example, `browser.find_element_by_class_name("main")` would find a single HTML object with the class
 name `main` whilst `browser.find_elements_by_class_name("button")` would find all of the HTML objects with class name 
 `button` - both returning `WebElement` objects. See 
-[Table 11-3](https://automatetheboringstuff.com/chapter11/#calibre_link-11) in Chapter 11 for a list of Selenium methods
-to find elements.
+[Table 12-3](https://automatetheboringstuff.com/2e/chapter12/#calibre_link45) in Chapter 12 for a list of Selenium 
+methods to find elements.
 
 Interaction can then occur with these objects through the `click()` and `send_keys()` methods - the latter takes a
 string argument and types the string into the given web element.
@@ -110,5 +112,5 @@ search_box.send_keys(Keys.ENTER)
 
 ### Task 3 - Selenium
 Now we get onto the fun stuff! Writing programs that can interact with web pages 😱. In this task, use the information 
-about Selenium above and [Chapter 11](https://automatetheboringstuff.com/chapter11/) to login to Made.com with your 
+about Selenium above and [Chapter 12](https://automatetheboringstuff.com/2e/chapter12/) to login to Made.com with your 
 customer account and place a sofa in your checkout basket.
