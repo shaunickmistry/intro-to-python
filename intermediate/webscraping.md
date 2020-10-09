@@ -26,6 +26,7 @@ need to install it. This can be done by running `pip install requests` from the 
 in our Python programs. See [Appendix A](https://automatetheboringstuff.com/2e/appendixa/) for more instructions on how 
 to install third party modules.
 
+
 To download a web page with `requests` we use the `requests.get()` method which takes a URL as a parameter, and will 
 return a Response object containing the web page and some information on the HTTP response in `Response.text`. We can 
 check the success of a request by calling the `raise_for_status()` method which will raise an error if there was an
