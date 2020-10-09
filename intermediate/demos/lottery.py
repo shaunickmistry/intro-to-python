@@ -8,7 +8,8 @@ browser = webdriver.Chrome(executable_path="/Users/smistry/Downloads/chromedrive
 browser.get("https://www.todaytix.com/x/london/shows/12495-harry-potter-and-the-cursed-child")
 
 # wait for the page to load
-sleep(2)
+sleep(10)
+
 # find the 'enter now' button on the page
 enter_now = browser.find_element_by_css_selector("button[type='submit']")
 # click it
