@@ -41,7 +41,7 @@ response.raise_for_status()
 
 ### `BeautifulSoup`
 To continue where the `requests` module left off, `BeautifulSoup` is a module that can extract particular information 
-and data from a web response. Again you will need to install it using `pip3 install beautifulsoup4` and use it in your 
+and data from a web response. Again you will need to install it using `pip install bs4` and use it in your 
 Python programs using `import bs4`.
 
 Web pages are made up of HTML, with certain tags and CSS classes. `BeautifulSoup` allows us to select any HTML element 
