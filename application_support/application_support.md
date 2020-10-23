@@ -6,14 +6,14 @@ workshop which has been designed to help the Application Support team start thei
 
 Python is a popular programming language that we use a lot at Made.com and especially in the backoffice team. In its 
 simplest form a script/program/application is just a text file (or number of text files) written in a programming
-language such as Python, and these files know how to talk to each other. The main purpose of programs and scripts is to
-take an input, do something with it and then give an output. 
+language such as Python, and these text files know how to talk to each other. The main purpose of programs and scripts 
+is to take an input, do something with it and then give an output. 
 
 So we can write a script that takes an order number, or a list of order numbers in the form of a spreadsheet or CSV 
-file, creates Eventstore events to marke the orders as cancelled, and then sends them. That's it. Input (an order number
-or CSV file), do something (create Eventstore events), output (send them to Eventstore). On a larger scale
+file, creates Eventstore events to mark the orders as cancelled, and then publishes these events. That's it. Input (an 
+order number or CSV file), do something (create Eventstore events), output (send them to Eventstore).
 
-And now we just need to learn how to do these things in Python; read a file, create Eventstore events, send them to
+And now we just need to learn how to do these things in Python; read a file, create Eventstore events, publish them to
 Eventstore. Programming, much like life, is all about breaking a problem down into smaller parts, and finding out how to
 tackle these small parts. And if you get stuck or see an error message, again, break it down, check that you understand
 the input, each line of code, and the output.
@@ -33,10 +33,6 @@ items in the form of a CSV file as input and then tell Cancellation service that
 for each order item, which in turn will notify Hacienda but that's less important right now. Lets have a look at how the
 script works.
 
-```python
-if __name__ == "__main__":
-    filepath = "hacienda_cancellation_requests.csv"
-    read_csv(filepath)
-```
-
 ### How to write scripts exercise
+Your task is to write a script that will take a list of order IDs from a CSV file and write the IDs with a timestamp to
+a new CSV file.
