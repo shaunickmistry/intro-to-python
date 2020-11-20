@@ -49,30 +49,31 @@ for x in range(10):
 ### Task 1 - Recap
 Write a script that will take a range as input, and print all even numbers in this range.
 
-Bonus: Have online at how to pass command line arguments in Python.
+Bonus: Have a look online at how to pass command line arguments in Python.
 
 ### Lists
 
-Lists allow us to store multiple values in a single variable. Think of a shopping list, it
-is a list of words, or what we would call strings in Python. So if you were to create such
-a variable in Python, it could look something like this. 
+Lists are a collection data type in Python that allow us to store multiple values in a 
+single variable. Think of a real-life example of a list such as a shopping list which is a
+list of words, called Strings in Python. So if you were to create such a list object in 
+Python, it could look something like this. 
 
 ```python
 shopping_list = ["Apples", "Bread", "Milk"]
 ```
 
-We use the square brackets to define a list in Python. Items are ordered, changeable, 
-allow duplicates and are indexed, starting at 0.
+We use square brackets to define a list in Python. Items are ordered, changeable, allow 
+duplicates and are indexed, starting at 0.
 
 ```python
 shopping_list = ["Apples", "Bread", "Milk"]
 print(shopping_list[0])
 ```
 
-So if we wanted to print the first item of the list, we would give the variable name 
-followed by square brackets and the index 0. Or if we wanted to print all items in a list
-we could use a for loop, defining a variable name for each item in the list as the for 
-loop iterates.
+If we wanted to print the first item of the list, we would give the variable name followed
+by square brackets and the index 0. Or if we wanted to print all items in a list we could
+use a for loop, defining a variable name for each item in the list as the for loop 
+iterates.
 
 ```python
 shopping_list = ["Apples", "Bread", "Milk"]
@@ -82,7 +83,7 @@ for food in shopping_list:
 
 ### Task 2 - Lists
 Use the Python console or a script to create a list and print one, some or all of its 
-items. Try using different data types such as Integers and Booleans.
+items. Try using different data types such as Integers and Booleans in your list.
 
 Bonus: Try to add, change and remove items from an existing list.
 
