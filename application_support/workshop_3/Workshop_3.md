@@ -145,7 +145,7 @@ We can change, remove and add items in a dictionary by using a key name.
 data["status"] = "Cancelled"
 ```
 
-Task 4 - Dictionaries
+### Task 4 - Dictionaries
 Write a Python script that will create a dictionary and print its content.
 
 Bonus: Try only printing the values of the dictionary, then only the keys, then the key 
