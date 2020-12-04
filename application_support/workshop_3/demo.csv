@@ -1,4 +1,4 @@
-order_id,order_item_id,status,sku
+order_id,status,order_item_id,sku
 "108607243","Dispatched","106385038","SOFAGREENVELVET01"
 "108607244","New","106385039","CHAIRBLUEWOOD02"
 "108607245","Cancelled","106385033","LAMPBLACKMETAL01"
