@@ -28,7 +28,7 @@ def get_consignment_ids_for_warehouse(cursor, warehouse_code):
         SELECT oc.id
         FROM order_consignments oc
         INNER JOIN order_instructions oi ON oc.id = oi.consignment_id
-        WHERE oc.warehouse_code = %s AND oi.state <> 'Cancelled';
+        WHERE oc.warehouse_code = %s AND oi.state = 'Cancelled';
     """
 
     cursor.execute(sql, (warehouse_code, ))
@@ -44,9 +44,10 @@ def mark_instructions_as_cancelled(cursor, consignment_ids):
 
 def main():
     args = parse_arguments()
-    conn = connect(args.db_host, getpass.getpass())
+    connection = connect(args.db_host, getpass.getpass())
     warehouses = ["londongateway", "ktn_wh45"]
-    with contextlib.closing(conn.cursor()) as cursor:
+    cursor = connection.cursor()
+    with contextlib.closing(cursor) as cursor:
         for warehouse in warehouses:
             cons_ids = get_consignment_ids_for_warehouse(cursor, warehouse)
             if not cons_ids:
@@ -56,7 +57,7 @@ def main():
 
             print(f"Going to cancel {len(cons_ids)} consignments for {warehouse}")
             mark_instructions_as_cancelled(cursor, cons_ids)
-            conn.commit()
+            connection.commit()
 
     print("Finished!")
 
